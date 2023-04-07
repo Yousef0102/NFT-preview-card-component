@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dar-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Very-dar-blue-main);
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+/* Start Design */
+main {
+}
+main .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  margin: 20px auto;
+  background-color: var(--Very-dark-blue-card);
+  border-radius: 10px;
+}
+@media (max-width: 410px) {
+  main .card {
+    width: 320px;
+  }
+}
+main .card .image {
+  padding: 20px;
+  padding-bottom: 0;
+}
+main .card .image img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+main .card .info {
+  padding: 0px 23px;
+}
+main .card .info h2 {
+  color: var(--White);
+  text-align: left;
+}
+main .card .info p {
+  font-size: 19px;
+  color: var(--Soft-blue);
+  text-align: left;
+  font-weight: 300;
+  line-height: 1.6;
+}
+main .card .info .time {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+main .card .info .time .jel {
+  color: var(--Cyan);
+  padding-left: 17px;
+}
+main .card .info .time .jel img {
+  position: absolute;
+  left: 0px;
+}
+main .card .info .time .clock {
+  color: var(--Soft-blue);
+}
+main .card .info .time .clock img {
+  position: absolute;
+  left: 251px;
+}
+main .card .info .bottom {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 0;
+  margin-top: 22px;
+  border-top: 1px solid var(--Very-dark-blue);
+}
+main .card .info .bottom img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-top: 14px;
+}
+main .card .info .bottom p {
+  margin-left: 20px;
+  font-size: 17px;
+}
+main .card .info .bottom p span {
+  color: white;
+}
+footer {
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: var(--Cyan);
+}
+footer span {
+  color: var(--Cyan);
+  font-weight: bold;
+  font-size: 18px;
+}
+/* End Design */
